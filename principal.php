@@ -1,18 +1,25 @@
 
 <html>
     <h1>Datos Guardados</h1>
+    <a href="consumir.php"><button type="button">Agregar</button></a>
+    <br>
+    <br>
+    <a href="index.php"><button type="button">Salir</button></a>
+
 <?php
-    $id=$_GET['id'];
-    $email=$_GET['email'];
-    $first_name=$_GET['first_name'];
-    $last_name=$_GET['last_name'];
-    $avatar=$_GET['avatar'];
+    $id=isset($_GET['id']);
+    $email=isset($_GET['email']);
+    $first_name=isset($_GET['first_name']);
+    $last_name=isset($_GET['last_name']);
+    $avatar=isset($_GET['avatar']);
 
     $idc=trim($id);
     $emailc=trim($email);
     $first_namec=trim( $first_name);
     $last_namec=trim($last_name);
     $avatarc=trim($avatar);
+
+    
 
 $servername = "localhost";
 $database = "consumirapi";
