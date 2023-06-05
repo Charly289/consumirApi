@@ -16,7 +16,7 @@ if(curl_errno($ch)) echo curl_errno($ch);
 
 curl_close($ch);         
  ?>
- <form action="principal.php" method="Get">
+ <form action="principal.php" method="GET">
  <table border=1>
     <tr>
         <td>Id</td>
@@ -59,7 +59,7 @@ curl_close($ch);
         </table>
         <button type="submit">Agregar</button>
 
-        </form>
+</form>
         <a href="principal.php"><button type="button">Principal</button></a>
         <br><br>
         <a href="index.php"><button type="button">Salir</button></a>
