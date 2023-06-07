@@ -7,6 +7,9 @@
     <a href="index.php"><button type="button">Salir</button></a>
 
 <?php
+
+include 'conexion.php';
+
     $id=isset($_GET['id']);
     $email=isset($_GET['email']);
     $first_name=isset($_GET['first_name']);
@@ -35,22 +38,8 @@
     $emailc2=trim($email_add);
     $first_namec2=trim($first_name_add);
     $last_namec2=trim($last_name_add);
-    $avatarc2=trim($avatar_add);
-    
+    $avatarc2=trim($avatar_add);  
 
-    $dbhost = "localhost" ;
-    $dbuser = "root";
-    $dbpass = "";
-    $dbname ="consumirapi";
-    
-    $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
-
-if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
-}
- 
-echo "Connected successfull";
-echo "<br>";
  
 $sql = "INSERT INTO users (id, email, first_name, last_name, avatar) 
         VALUES ('$idc', '$emailc', '$first_namec', '$last_namec','$avatarc')";
