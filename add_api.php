@@ -50,6 +50,9 @@ mysqli_close($conn);
     
 ?>
 <html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    </head>
     <h1>DATOS AGREGADOS</h1>
     <a href="principal.php"><button type="button">Principal</button></a>
     <a href="consumir.php"><button type="button">Agregar</button></a>

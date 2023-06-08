@@ -1,6 +1,8 @@
+
 <?php
 
 include 'conexion.php';
+
 
 $nombre=$_POST["usuario"];
 $pass=$_POST["password"];
@@ -17,9 +19,12 @@ else if($nr==0){
 
 ?>
 <html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    </head>
     <body>
         <form action="consumir.php" method="get">
-            <table border="1">
+            <table>
                 <tr>
                     <td>
                     <label>Registrar Datos</label>
@@ -27,8 +32,7 @@ else if($nr==0){
                 </tr>
                 <tr>
                     <td>
-                    <button type="submit" name="registrar">Agregar</button>
-
+                    <button type="submit"  name="registrar">Agregar</button>
                     </td>
                 </tr>
             </table>

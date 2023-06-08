@@ -1,5 +1,8 @@
 
 <html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
     <h1>Datos Guardados</h1>
     <a href="consumir.php"><button type="button">Agregar</button></a>
     <br>

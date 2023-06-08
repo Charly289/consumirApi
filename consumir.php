@@ -17,6 +17,10 @@ if(curl_errno($ch)) echo curl_errno($ch);
 
 curl_close($ch);         
  ?>
+ <html>
+    <head>    
+    <link rel="stylesheet" type="text/css" href="style.css" >    
+    </head>
  <form action="principal.php" method="GET">
  <table border=1>
     <tr>
@@ -64,3 +68,5 @@ curl_close($ch);
         <a href="principal.php"><button type="button">Principal</button></a>
         <br><br>
         <a href="index.php"><button type="button">Salir</button></a>
+        
+ </html>
