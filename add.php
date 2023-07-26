@@ -6,7 +6,7 @@
     
 <div class="topnav">
   <a href="principal.php">Home</a>
-  <a href="#">Principal</a>
+  <a href="principal.php">Principal</a>
   <a href="index.php">Salir</a>  
 </div>
 

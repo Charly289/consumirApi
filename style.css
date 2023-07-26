@@ -5,11 +5,18 @@ table{
     background-color: #3ABAF1;
 }
 
-.input_login [type=text],input[type=password]{
+.input_login [type=text]{
     width:100%;
     padding:8px 20px;
     border: 2px solid #ccc;
     box-sizing: border-box;
+}
+
+.input_login[type=password]{
+  width:100%;
+  padding:8px 20px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
 }
 img{
     width: 100px;

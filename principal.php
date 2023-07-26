@@ -1,13 +1,14 @@
 
 <html>
     <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
     </head>
     <body>
 <div class="topnav">
   <a href="principal.php">Home</a>
   <a href="#">Principal</a>
   <a href="index.php">Salir</a>  
+  
 </div>
 
 <div class="row">
