@@ -1,8 +1,8 @@
 <?php
     $dbhost = "localhost" ;
     $dbuser = "root";
-    $dbpass = "";
-    $dbname ="consumirapi";
+    $dbpass = "12345";
+    $dbname ="cunsumirapi";
     
     $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 

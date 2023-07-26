@@ -15,7 +15,7 @@
                 <tr><td><input id="password" type="password" class="input_login" name="password"  placeholder="Password"></td></tr>
                 <tr><td>                    
                     <button class="button button2" type="submit"  name="ingresar">Ingresar</button>
-                    <button class="button button2" href="index.php"  name="add.php">Registrar</button>
+                    <a class="button button2" href="add.php"  name="registrar">Registrar</a>
                     <button class="button button2" id="botonenviar" onclick="validaform()">Test</button>
                 </td>
                 </tr>

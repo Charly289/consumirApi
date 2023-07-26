@@ -58,6 +58,7 @@ label{
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
+                
               }
               input[type=password]{
                 width: 30%;
@@ -91,12 +92,10 @@ label{
                 margin: auto; position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-49%, -49%);
-                 
-
-              }     
+                transform: translate(-49%, -49%);                
+              }
 *
-        {
+              {
             box-sizing: border-box;
           }
           
@@ -108,13 +107,15 @@ label{
           .header {
             background-color: #f1f1f1;
             padding: 20px;
-            text-align: center;
+            text-align: center;           
+            font-family: arial;
           }
           
           /* Style the top navigation bar */
           .topnav {
             overflow: hidden;
-            background-color: #333;
+            background-color: #333;            
+            font-family: arial;
           }
           
           /* Style the topnav links */
@@ -170,7 +171,7 @@ label{
             padding: 10px;
             text-align: center;
           }
-          .button {
+          .button{
             box-shadow: #333;
             background-color: #4CAF50; /* Green */
             border: none;
@@ -183,7 +184,8 @@ label{
             margin: 4px 2px;
             cursor: pointer;
             -webkit-transition-duration: 0.4s; /* Safari */
-            transition-duration: 0.4s;
+            transition-duration: 0.4s;          
+            font-family: arial;
         }
         
         .button1 {
