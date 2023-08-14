@@ -1,5 +1,8 @@
 <html>
     <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -45,12 +48,33 @@
     <br>
     <button class="button button2" type="submit" value="Submit">Agregar</button>
   </form>
+  <table class="table table-responsive table-bordered" id="addtable">
+      <thead>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Correo</td>
+      </thead>
+      <tr>
+        <td>Null</td>
+        <td>Null</td>
+        <td>Null</td>
+      </tr>
+
+  </table>
   </div>  
   <div class="column add"></div>     
 </div>
 <div class="footer">
   <h2>Footer</h2>
 </div>  
+<script type="text/javascript">    
+    $(document).ready(function(){
+        $("#addtable").DataTable({
+            ajax: "loaddata.php"
+        });
+    });
+</script>
+<script type="text/javascript" src="datatables/datatables.min.js"></script>
 </body>    
 
 </html>
