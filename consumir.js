@@ -1,4 +1,6 @@
-
+       
+         
+    
          function validaForm(){
         
             var usuario = document.getElementById('usuario').value;
@@ -35,5 +37,7 @@
 
             });
             } 
+
+         
 
 

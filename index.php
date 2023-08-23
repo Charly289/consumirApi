@@ -2,11 +2,13 @@
     
   <head>
     <link rel="stylesheet" type="text/css" href="style.css" >    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="consumir.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+        <script src="consumir.js"></script>
     </head>
     <div class="div-form" id="formulario">
-        <form method="POST" id="formdata">
+        <form method="POST" id="formdata" action="login.php">
             <table class="input_login">
                 <tr><td colspan="2" style="background-color: #33A8BD; padding-bottom: 5px; padding-top:5px;"><label>Login</label></td></tr>
                 <tr><td align="center" rowspan="5"><img src="candado.png"></td><td><label>Usuario</label></td></tr>
