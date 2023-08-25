@@ -50,23 +50,17 @@
     <button type="submit" class="button button2" id="agregar" name="agregar" >Agregar</button>
 
     <script>      
-      var nombre = document.getElementById('nombre').value;
-      var apellidos = document.getElementById('apellidos').value;
-      var correo = document.getElementById('correo').value;
-      var password = document.getElementById('password').value;
-      var tipo_empleado = document.getElementById('tipo_empleado').value;
-      var genero = document.getElementById('genero').value;
+       nombre = document.getElementById('nombre').value;
+       apellidos = document.getElementById('apellidos').value;
+       correo = document.getElementById('correo').value;
+       password = document.getElementById('password').value;
+       tipo_empleado = document.getElementById('tipo_empleado').value;
+       genero = document.getElementById('genero').value;
 
-     var  data = {
-                  "nombre":nombre,
-                  "apellidos":apellidos,
-                  "correo":correo,
-                  "password":password,
-                  "tipo_empleado":tipo_empleado,
-                  "genero":genero
-                };
-
-      
+       data  =  {
+                  nombre,apellidos,correo,password,tipo_empleado,genero
+      };              
+                
 
 $(document).ready(function(){
         $("#agregar").click(function(e){
@@ -74,14 +68,12 @@ $(document).ready(function(){
           $.ajax({
             type:"POST",
             url:"add_Controller.php",
-            data:{data:data},
+            data:data,
             dataType:"json",
             success: function(response){
-            console.log(response);
-            },
-            error: function (response) {
-            alert("Error con la petición")+response;
-            }          
+            
+            }
+                    
         });
 });
 });

@@ -17,15 +17,13 @@ include 'conexion.php';
 if (mysqli_query($conn, $sql)) {  
 
     echo("Datos Agregados");
-    var_dump($nombre,$apellidos);
-
+    
+ 
 } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
       
 }
-mysqli_close($conn);
-      
-
+mysqli_close($conn);    
  
 ?>
 
